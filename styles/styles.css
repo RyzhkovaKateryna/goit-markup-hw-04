@@ -118,12 +118,12 @@
 .header {
     border-bottom: 1px solid var(--line-cl);
 } 
+.header-box,
 .header-list,
 .header-list-nav, 
 .feature-list,
 .activity-list,
 .team-list,
-.header,
 .main-nav{
     display: block;
     display: flex;
