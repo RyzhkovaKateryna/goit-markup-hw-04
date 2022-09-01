@@ -115,7 +115,33 @@
 {
     color: var(--accent-txt-cl);
 }
+.header {
+    border-bottom: 1px solid var(--line-cl);
+} 
+.header-list,
+.header-list-nav, 
+.feature-list,
+.activity-list,
+.team-list,
+.header,
+.main-nav{
+    display: block;
+    display: flex;
+}
+.header-logo {
+    margin-right: 93px;
+    padding-top: 24px;
+    padding-bottom: 24px;
+}
+.header-list{
+    gap: 50px;
+    margin-left: auto;
 
+}
+.header-list-nav {
+    gap: 50px;
+
+}   
 /* active pages */
 .current-page {
     color: var(--accent-bg-cl);
@@ -133,7 +159,14 @@
     color: var(--light-txt-cl);
     margin-bottom: 35px;
 }
-
+.main-container {
+    width: 700px;
+}
+.section-title {
+padding-top: 200px;
+padding-bottom: 200px;
+}
+ 
 /* Styles for buttons */
 .btn {
     font-family:inherit;
@@ -211,7 +244,30 @@
     letter-spacing: 0.03em;
 
 }
+
+.features-section {
+    padding-top: 94px;
+    padding-bottom: 94px;
+}
+.feature-list {
+    gap: 30px;
+}
+.feature-content {
+    margin-top: 10px;
+}
+/* activities */
+ 
+.title {
+    margin-bottom: 50px;
+}
+.activity-list {
+    gap: 30px;
+}
+.section-active {
+    padding-bottom: 94px;
+}
 /* styles for team-section */
+
 .title {
     font-weight: 700;
     font-size: 36px;
@@ -235,111 +291,6 @@
     letter-spacing: 0.03em;
 
 }
-/* styles for footer */
-.footer-link {
-    font-family: var(--main-font);
-    font-style: normal;
-    font-weight: 400;
-    font-size: 14px;
-    line-height: calc(24/14);
-    letter-spacing: 0.03em; 
-    color: var(--light-txt-cl-60);   
-}
-.adres {
-    color: var(--light-txt-cl);
-}
-.adres:hover, 
-.adres:focus{
-    color: var(--accent-txt-cl);
-}
-.footer-link:hover,
-.footer-link:focus {
-    color: var(--accent-txt-cl);
-}
-/* styles for portfolio */
-
-.subtitle-project {
-    font-weight: 700;
-    font-size: 18px;
-    line-height: calc(36/18);
-    letter-spacing: 0.06em;
-    color: var(--main-txt-cl);
-}
-.project-content {
-   font-size: 16px;
-   line-height: calc(30/16);
-   letter-spacing: 0.03em;    
-   color: var(--grey-txt-cl);
-}
-
-
-/* Оформлення контейнера */
-
-.container {
-    width: 1200px;
-    padding: 0px 15px;
-    margin: 0 auto;
-    display: block;
-}
-.main-container {
-    width: 700px;
-}
-.section-title {
-padding-top: 200px;
-padding-bottom: 200px;
-}
-/* header */
-.header {
-    border-bottom: 1px solid var(--line-cl);
-}
-.header-box, 
-.header-list,
-.header-list-nav, 
-.feature-list,
-.activity-list,
-.team-list,
-.main-nav{
-    display: block;
-    display: flex;
-}
-.header-logo {
-    margin-right: 93px;
-    padding-top: 24px;
-    padding-bottom: 24px;
-}
-.header-list{
-    gap: 50px;
-    margin-left: auto;
-
-}
-.header-list-nav {
-    gap: 50px;
-
-}    
-/* features */
-
-.features-section {
-    padding-top: 94px;
-    padding-bottom: 94px;
-}
-.feature-list {
-    gap: 30px;
-}
-.feature-content {
-    margin-top: 10px;
-}
-/* activities */
- 
-.title {
-    margin-bottom: 50px;
-}
-.activity-list {
-    gap: 30px;
-}
-.section-active {
-    padding-bottom: 94px;
-}
- /* team section */
  .section-team {
     padding-bottom: 94px;
     padding-top: 94px;
@@ -362,7 +313,54 @@ img {
     max-width: 100%;
     height: auto;
 }
-/* оформлення  портфоліо */
+/* styles for footer */
+.footer-link {
+    font-family: var(--main-font);
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: calc(24/14);
+    letter-spacing: 0.03em; 
+    color: var(--light-txt-cl-60);   
+}
+.adres {
+    color: var(--light-txt-cl);
+}
+.adres:hover, 
+.adres:focus{
+    color: var(--accent-txt-cl);
+}
+.footer-link:hover,
+.footer-link:focus {
+    color: var(--accent-txt-cl);
+}
+
+ .footer {
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+.footer-contacts {
+    margin-top: 20px;
+}
+
+.link-foot {
+    margin-bottom: 9px;
+}
+/* styles for portfolio */
+
+.subtitle-project {
+    font-weight: 700;
+    font-size: 18px;
+    line-height: calc(36/18);
+    letter-spacing: 0.06em;
+    color: var(--main-txt-cl);
+}
+.project-content {
+   font-size: 16px;
+   line-height: calc(30/16);
+   letter-spacing: 0.03em;    
+   color: var(--grey-txt-cl);
+}
 .portfolio-link {
     text-decoration: none;
 }
@@ -395,17 +393,20 @@ img {
     margin-top: 0;
     margin-bottom: 4px;
 }
- /* footer */
 
-.footer {
-    padding-top: 50px;
-    padding-bottom: 50px;
-}
-.footer-contacts {
-    margin-top: 20px;
+
+/* Оформлення контейнера */
+
+.container {
+    width: 1200px;
+    padding: 0px 15px;
+    margin: 0 auto;
+    display: block;
 }
 
-.link-foot {
-    margin-bottom: 9px;
-}
+
+
+
+
+
 
