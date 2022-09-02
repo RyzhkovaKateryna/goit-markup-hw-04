@@ -37,9 +37,17 @@
             </ul>
         </nav>
         <ul class="list header-list">
-            <li class="link"><a class="header-link" href="mailto:info@devstudio.com">info@devstudio.com</a></li>
-            <li class="link"><a class="header-link" href="tel:+380961111111">+38 096 111 11 11 </a></li>
-        </ul>            
+            <li class="link"><a class="header-link header-icons" href="mailto:info@devstudio.com">
+                <svg class="ficons" width="16" height="12">
+                <use href="./images/icons.svg#post"></use>
+                </svg>                
+                info@devstudio.com</a></li>
+            <li class="link"><a class="header-link header-icons" href="tel:+380961111111">
+                <svg class="ficons" width="10" height="16">
+                <use href="./images/icons.svg#smartphone"></use>
+                </svg>                
+                +38 096 111 11 11 </a></li>
+        </ul>           
         </div>
     </header>
     <main class="project">
@@ -90,7 +98,7 @@
             <li class="project-link"> 
                 <a class="portfolio-link" href="#">
                 <img class="project-img" src="./images/portfolio/img-4.jpg" alt=" чорні навушники" width="370" height="294">
-                <div class="img-content">
+                <div class="portfolio-box">
                 <h2 class="subtitle-project">Проєкт Prime</h2>
                 <p class="project-content">Маркетинг</p>                    
                 </div>                    
@@ -101,7 +109,7 @@
             <li class="project-link"> 
                 <a class="portfolio-link" href="#">
                 <img class="project-img" src="./images/portfolio/img-5.jpg" alt="дві коробочки" width="370" height="294">
-                <div class="img-content">
+                <div class="portfolio-box">
                 <h2 class="subtitle-project">Проєкт Boxes</h2>
                 <p class="project-content">Додаток</p>                    
                 </div>                    
@@ -112,7 +120,7 @@
             <li class="project-link"> 
                 <a class="portfolio-link" href="#">
                 <img class="project-img" src="./images/portfolio/img-6.jpg" alt="ввімкнений монітор" width="370" height="294">
-                <div class="img-content">
+                <div class="portfolio-box">
                 <h2 class="subtitle-project" lang="en">Inspiration has no Borders</h2>
                 <p class="project-content">Веб-сайт</p>                    
                 </div>                   
@@ -123,7 +131,7 @@
             <li class="project-link"> 
                 <a class="portfolio-link" href="#">
                 <img class="project-img" src="./images/portfolio/img-7.jpg" alt="відкрита книга" width="370" height="294">
-                <div class="img-content">
+                <div class="portfolio-box">
                 <h2 class="subtitle-project" lang="en">Видання Limited Edition</h2>
                 <p class="project-content">Дизайн</p>                    
                 </div>                    
@@ -134,7 +142,7 @@
             <li class="project-link"> 
                 <a class="portfolio-link" href="#">
                 <img class="project-img" src="./images/portfolio/img-8.jpg" alt="бірка для одягу" width="370" height="294">
-                <div class="img-content">
+                <div class="portfolio-box">
                 <h2 class="subtitle-project">Проєкт LAB</h2>
                 <p class="project-content">Маркетинг</p>                    
                 </div>                    
@@ -145,7 +153,7 @@
             <li class="project-link"> 
                 <a class="portfolio-link" href="#">
                 <img class="project-img" src="./images/portfolio/img-9.jpg" alt="людина працює на ноутбуці" width="370" height="294">
-                <div class="img-content">
+                <div class="portfolio-box">
                 <h2 class="subtitle-project" lang="en">Growing Business</h2>
                 <p class="project-content">Додаток</p>                    
                 </div>                    
@@ -159,22 +167,69 @@
     </section>
 
  </main>
-<!-- footer -->
-<footer class="footer">
-    <div class="container footer-box">
-    <a class="logo" href="./index.html" lang="en"><span class="logo-braket-nav">Web</span><span class="studio">Studio</span></a>
-    <address class="footer-contacts">
-        <ul class="list footer-list">
-            <li class="link"><a class="footer-link" href="https://goo.gl/maps/LsWouTrYtJUnjN1F6" target="_blank" rel="noopener no referrer"><span class="adres">м. Київ,
-                    пр-т
-                    Лесі Українки, 26</span> </a></li>
-            <li class="link"><a class="footer-link" href="mailto:info@devstudio.com">info@devstudio.com</a></li>
-            <li class="link"><a class="footer-link" href="tel:+380961111111">+38 096 111 11 11 </a></li>
-        </ul>
-    </address>                
-    </div>
+    <!-- Footer -->
 
-</footer>
+    <footer class="footer">
+        <div class="container footer-box">
+            <div>
+        <a class="logo" href="./index.html" lang="en"><span class="logo-braket-nav">Web</span><span class="studio">Studio</span></a>
+        <address class="footer-contacts">
+            <ul class="list footer-list">
+                <li class="link link-foot"><a class="footer-link" href="https://goo.gl/maps/LsWouTrYtJUnjN1F6" target="_blank" rel="noopener no referrer"><span class="adres">м. Київ,
+                        пр-т
+                        Лесі Українки, 26</span> </a></li>
+                <li class="link link-foot"><a class="footer-link" href="mailto:info@devstudio.com">info@devstudio.com</a></li>
+                <li class="link"><a class="footer-link" href="tel:+380961111111">+38 096 111 11 11 </a></li>
+            </ul>
+        </address></div>
+        <div class="footer-icons">
+            <h3 class="subtitle-team footer-sub">приєднуйтесь</h3>
+            <ul class="list icon-footer">
+                <li class="icon-list-footer">
+                    <a class="foot-link"
+                    href="https://instagram.com"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    aria-label="Instagram">
+                    <svg class="foot-icons" width="20" height="20">
+                    <use href="./images/icons.svg#instagram"></use>
+                    </svg></a>
+                </li>
+                <li class="icon-list-footer">
+                    <a class="foot-link"
+                    href="https://twitter.com"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    aria-label="Twitter">
+                    <svg class="foot-icons" width="20" height="20">
+                    <use href="./images/icons.svg#twitter"></use>
+                </svg></a>
+                </li>
+                <li class="icon-list-footer">
+                    <a class="foot-link"
+                    href="https://facebook.com"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    aria-label="Facebook">
+                    <svg class="foot-icons" width="20" height="20">
+                    <use href="./images/icons.svg#facebook"></use>
+                    </svg></a>
+                </li>
+                <li class="icon-list-footer">
+                    <a class="foot-link"
+                    href="https://linkedin.com"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    aria-label="Linkedin">
+                    <svg class="foot-icons" width="20" height="20">
+                    <use href="./images/icons.svg#linkedin"></use>
+                    </svg></a>
+                </li>
+            </ul>
+        </div>                
+        </div>
+
+    </footer>
 </body>
 
 </html>
