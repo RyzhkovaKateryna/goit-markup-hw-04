@@ -494,7 +494,8 @@ img {
 
 .project-link:focus,
 .project-link:hover {
-    box-shadow: 0px 4px 4px var(--box-shadow);
+    box-shadow: var(--shadow-btn-bg-cl);
+    filter: drop-shadow(0px 4px 4px var(--btn-shadow));
 }
  /* footer */
 
