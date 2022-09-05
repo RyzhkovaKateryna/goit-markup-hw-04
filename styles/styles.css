@@ -50,7 +50,7 @@
 }
 .list, .main-title, .visually-hidden, 
 .title, .subtitle, .feature-content, 
-.subtitle-team, .team-content {
+.subtitle-team, .team-content, .article {
     margin: 0px 0px;
     padding: 0px 0px;
 }
@@ -59,18 +59,19 @@
     font-family: var(--main-font);
     background-color: var(--main-light-bg-cl);
     color: var(--grey-txt-cl);
-
 }
 
+.section-title {
+    text-align: center;
+}
 /* background styles */
-.footer {
+.section-title, .footer {
     background-color: var(--grey-bg-cl);
 
 }
 
 .section-team {
     background-color: var(--grey-team-bg-cl);
-    margin-bottom: 94px;
 }
 .item-team{
     background-color: var(--main-light-bg-cl);
@@ -158,6 +159,7 @@
     margin-left: auto;
     margin-right: auto;
     background-image:linear-gradient(to right, rgba(47, 48, 58, 0.4),rgba(47, 48, 58, 0.4)),url(../images/bg-images/bg-img.jpg);
+
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -247,13 +249,14 @@
     text-transform: uppercase;
     color: var(--main-txt-cl);
 }
+.subtitle-feature{
+    margin-bottom: 10px;
+}
 .feature-content {
     font-size: 14px;
     line-height: calc(24/14);
     letter-spacing: 0.03em;
-
 }
-
 .feature-icon {
     display: flex;
     align-items: center;
@@ -265,7 +268,6 @@
     margin-bottom: 30px;
 
 }
-
 .features-section {
     padding-top: 94px;
     padding-bottom: 94px;
@@ -273,9 +275,7 @@
 .feature-list {
     gap: 30px;
 }
-.feature-content {
-    margin-top: 10px;
-}
+
 /**
   |============================
   | Styles for team-section
@@ -289,6 +289,7 @@
     text-align: center;
     letter-spacing: 0.03em;
     color: var(--main-txt-cl);
+    margin-bottom: 50px;
 }
 .subtitle-team {
     font-weight: 500;
@@ -318,8 +319,7 @@
     border-top: 0; 
 }
 .img-content{
-    padding-top: 30px;
-    padding-bottom: 16px;
+    padding: 30px 32px;
 }
 .subtitle-team {
     margin-bottom: 10px;
@@ -362,7 +362,18 @@ img {
   .ficons {
     fill: currentColor;
   }
+ /**
+   |============================
+   | styles for activity-section
+   |============================
+ */
 
+   .activity-list {
+      gap: 30px;
+  }
+  .section-active {
+      padding-bottom: 94px;
+  }
   /**
     |============================
     | our clients
@@ -402,9 +413,11 @@ img {
     fill: var(--accent-txt-cl);
 
 }
-  .section-client {
-    margin-bottom: 94px;
-  }
+.section-client {
+    padding-top: 94px;
+    padding-bottom: 94px;
+
+}
 
 
   /**
@@ -442,6 +455,7 @@ img {
     letter-spacing: 0.03em;
     text-transform: uppercase;
     color: var(--light-txt-cl);
+    margin-bottom: 20px;
 }
 
 
