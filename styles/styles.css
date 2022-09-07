@@ -401,17 +401,16 @@ img {
   }
 
   .client-icons {
-    fill: var(--social-icons-cl);
+    fill: currentColor;
   }
-  .client-item:hover .client-link,
-  .client-item:focus .client-link {
 
+.client-link:hover,
+.client-link:focus {
+    color: var(--accent-txt-cl);
     border-color: var(--accent-txt-cl);
 }
-.client-link:hover .client-icons,
-.client-link:focus .client-icons {
-    fill: var(--accent-txt-cl);
-
+.client-link {
+    outline: transparent;
 }
 .section-client {
     padding-top: 94px;
